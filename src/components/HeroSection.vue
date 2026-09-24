@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Play, Skull, Flame, Sword, Target, ChevronDown, Sparkles, Volume2 } from 'lucide-vue-next'
+import { Sparkles } from 'lucide-vue-next'
 
 const mouseX = ref(0)
 const mouseY = ref(0)
@@ -35,17 +35,26 @@ onUnmounted(() => {
       <div class="absolute inset-0 rounded-full bg-blue-100/20 blur-3xl scale-150"></div>
     </div>
 
-    <!-- Silueta de árboles (montañas) - AHORA DETRÁS (z-0) -->
-    <svg class="absolute bottom-0 left-0 w-full h-64 text-slate-950 z-0" 
-         viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="currentColor" d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,208C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-    </svg>
+    <div class="absolute bottom-0 left-0 w-full z-0 pointer-events-none">
+      <img 
+        src="/img/mountains.webp" 
+        alt="Bosque nocturno"
+        class="w-full h-auto
+               brightness-[0.6] contrast-110 saturate-50
+               opacity-80"
+      />
+    </div>
 
-    <!-- Imagen del bosque - ESQUINA INFERIOR IZQUIERDA, DIFUMINADA Y CON DEGRADADO -->
+    <!-- Degradado inferior para fundir el fondo con la sección -->
+    <div class="absolute bottom-0 left-0 w-full h-64 
+                bg-linear-to-t from-slate-950 via-slate-950/50 to-transparent 
+                z-0 pointer-events-none"></div>
+
+
     <img 
       src="/hero-forest.png" 
       alt="Forest Background" 
-      class="absolute bottom-0 left-0 w-[80%] md:w-[60%] max-w-5xl md:max-w-3xl h-auto z-6 pointer-events-none 
+      class="absolute bottom-0 left-0 w-[80%] md:w-[60%] max-w-5xl md:max-w-3xl h-auto z-[6] pointer-events-none 
              mask-[linear-gradient(to_right,black_40%,transparent_100%),linear-gradient(to_top,black_40%,transparent_100%)]
              mask-intersect
              [-webkit-mask-image:linear-gradient(to_right,black_40%,transparent_100%),linear-gradient(to_top,black_40%,transparent_100%)]
