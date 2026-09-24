@@ -63,10 +63,14 @@ export const timeline = [
         'Establecer la narrativa visual del juego',
       ],
     },
-    links: [],
+    links: [
+      { label: 'Link Storyboard completo', url: 'https://drive.google.com/drive/folders/130FtPHt4sbQLz9dCutGUdfIbS3TMCUMM?usp=sharing', icon: 'ExternalLink' }
+    ],
     media: [
-      { type: 'image', src: '/img/proto-1.png', caption: 'Primera escena en Unity' },
-      { type: 'image', src: '/img/proto-2.png', caption: 'Sistema de oleadas' },
+      { type: 'image', src: '/img/sb1.webp', caption: 'Primera escena del Juego' },
+      { type: 'image', src: '/img/sb2.webp', caption: 'Mecanica de la Espada' },
+      { type: 'image', src: '/img/sb3.webp', caption: 'Mecanica del Oscuridad' },
+      { type: 'image', src: '/img/sb4.webp', caption: 'Final del juego cuando amanece' },
     ],
   },
   {
