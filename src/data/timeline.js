@@ -63,10 +63,14 @@ export const timeline = [
         'Establecer la narrativa visual del juego',
       ],
     },
-    links: [],
+    links: [
+      { label: 'Link Storyboard completo', url: 'https://drive.google.com/drive/folders/130FtPHt4sbQLz9dCutGUdfIbS3TMCUMM?usp=sharing', icon: 'ExternalLink' }
+    ],
     media: [
-      { type: 'image', src: '/img/proto-1.png', caption: 'Primera escena en Unity' },
-      { type: 'image', src: '/img/proto-2.png', caption: 'Sistema de oleadas' },
+      { type: 'image', src: '/img/sb1.webp', caption: 'Primera escena del Juego' },
+      { type: 'image', src: '/img/sb2.webp', caption: 'Mecanica de la Espada' },
+      { type: 'image', src: '/img/sb3.webp', caption: 'Mecanica del Oscuridad' },
+      { type: 'image', src: '/img/sb4.webp', caption: 'Final del juego cuando amanece' },
     ],
   },
   {
@@ -87,11 +91,7 @@ export const timeline = [
     },
     links: [
       { label: 'Video Prototipo', url: 'https://drive.google.com/file/d/1Vafj8JVyAcd5DlUaNHvuQLjHiZ1iJv6Y/view?usp=sharing', icon: 'ExternalLink' }
-    ],
-    media: [
-      { type: 'video', src: '/videos/combat-demo.mp4', caption: 'Demo de combate' },
-      { type: 'image', src: '/img/arc-physics.png', caption: 'Física del arco' },
-    ],
+    ]
   },
   {
     id: 'pruebasUsuario',
@@ -114,12 +114,9 @@ export const timeline = [
       ],
     },
     links: [
-      { label: 'Usuario 1', url: 'https://drive.google.com/file/d/1ad2_ZQyGAgiz7AGkXsOzQ6I1RxuY3X4c/view?usp=sharing', icon: 'Youtube' },
-      { label: 'Usuario 2', url: 'https://drive.google.com/file/d/1_q537R7HC63kxGU3D-uhZ89LSgg4mCb2/view?usp=sharing', icon: 'Youtube' },
-      { label: 'Usuario 3', url: 'https://drive.google.com/file/d/13x6Ljjc4jJqTsGcS-GBISEaXY1OQzFOB/view?usp=sharing', icon: 'Youtube' },
-    ],
-    media: [
-      { type: 'image', src: '/img/audio-mixer.png', caption: 'Mixer de FMOD' },
+      { label: 'Video Usuario 1', url: 'https://drive.google.com/file/d/1ad2_ZQyGAgiz7AGkXsOzQ6I1RxuY3X4c/view?usp=sharing', icon: 'Youtube' },
+      { label: 'Video Usuario 2', url: 'https://drive.google.com/file/d/1_q537R7HC63kxGU3D-uhZ89LSgg4mCb2/view?usp=sharing', icon: 'Youtube' },
+      { label: 'Video Usuario 3', url: 'https://drive.google.com/file/d/13x6Ljjc4jJqTsGcS-GBISEaXY1OQzFOB/view?usp=sharing', icon: 'Youtube' },
     ],
   },
   {
@@ -134,7 +131,6 @@ export const timeline = [
     details: {
       objetivos: [
         'Build APK optimizada',
-        'Video trailer de 60s',
         'Publicación del portafolio',
       ],
     },

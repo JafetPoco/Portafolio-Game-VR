@@ -48,7 +48,7 @@ const vrFeatures = [
   <section id="gameplay" class="relative py-32 overflow-hidden">
     
     <!-- Glow de fondo -->
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] 
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-175 h-175 
                 bg-orange-500/10 blur-[150px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-7xl mx-auto px-6">
@@ -81,10 +81,10 @@ const vrFeatures = [
           :class="pillar.border"
         >
           <!-- Imagen de fondo de la card (REEMPLAZAR src) -->
-          <div class="relative aspect-[4/5] overflow-hidden">
+          <div class="relative aspect-4/5 overflow-hidden">
             <!-- Overlay degradado -->
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
-            <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-orange-500/10 
+            <div class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-linear-to-br from-transparent via-transparent to-orange-500/10 
                         opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
 
@@ -127,14 +127,21 @@ const vrFeatures = [
             </p>
           </div>
 
-          <!-- IMAGEN SUGERIDA: Persona con headset VR en un entorno oscuro con fogata -->
+          <!-- Video -->
           <div class="relative aspect-video rounded-3xl overflow-hidden
                       bg-slate-900 border border-slate-800
                       shadow-[0_0_60px_rgba(6,182,212,0.15)]">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
-            <!-- Glow decorativo -->
-            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 h-24 
-                        bg-cyan-500/30 blur-[60px] rounded-full"></div>
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/videos/animation1.webm" type="video/webm" />
+            </video>
+
+            <div class="absolute inset-0 bg-linear-to-t from-slate-950/80 to-transparent"></div>
           </div>
         </div>
 
@@ -167,7 +174,7 @@ const vrFeatures = [
                   border border-slate-800">
         
 
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/40"></div>
+        <div class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/80 to-slate-950/40"></div>
         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-32 
                     bg-orange-500/30 blur-[100px] rounded-full"></div>
 

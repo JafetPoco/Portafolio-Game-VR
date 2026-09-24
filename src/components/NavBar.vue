@@ -37,12 +37,6 @@ const links = [
         <a href="https://github.com/BerlyCS/QuestGame.git" class="p-2 rounded-lg hover:bg-slate-800 transition">
           <Github class="w-5 h-5 text-slate-300" />
         </a>
-        <a href="#" 
-           class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500 to-amber-500 
-                  rounded-lg font-semibold text-slate-950 hover:shadow-lg hover:shadow-orange-500/50 transition">
-          <Gamepad2 class="w-4 h-4" />
-          Jugar Demo
-        </a>
       </div>
 
       <!-- Mobile toggle -->

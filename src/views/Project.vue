@@ -13,7 +13,7 @@ import { projectMeta } from '../data/timeline'
 
     <main class="relative z-10 pt-32">
       <!-- Hero del proyecto -->
-      <section class="max-w-7xl mx-auto px-6 mb-16">
+      <section class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-[1fr_auto] gap-8 items-end">
           <div>
             <h1 class="text-5xl md:text-7xl font-black text-slate-100 tracking-tight mb-4">
@@ -22,24 +22,6 @@ import { projectMeta } from '../data/timeline'
             <p class="text-lg text-slate-400 max-w-2xl">
               {{ projectMeta.subtitle }}
             </p>
-          </div>
-
-          <div class="flex gap-3">
-            <a href="#" 
-               class="inline-flex items-center gap-2 px-5 py-3 rounded-xl
-                      bg-slate-900 border border-slate-800
-                      hover:border-orange-500/60 text-slate-200 text-sm font-semibold
-                      transition">
-              <Github class="w-4 h-4" />
-              Repo
-            </a>
-            <a href="#" 
-               class="inline-flex items-center gap-2 px-5 py-3 rounded-xl
-                      fire-gradient text-slate-950 text-sm font-bold
-                      hover:scale-105 transition glow-fire">
-              <Download class="w-4 h-4" />
-              Build
-            </a>
           </div>
         </div>
       </section>
